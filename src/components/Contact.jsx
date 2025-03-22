@@ -17,10 +17,8 @@ function Contact() {
       message: form.current.message.value,
     });
   
-    emailjs
-      .sendForm('service_gs85x2h', 'template_6fuggyv', form.current, {
-        publicKey: '7vq8yzxX1CjPxKsJFj2OR',
-      })
+    emailjs.sendForm('service_gs85x2h', 'template_6fuggyv', form.current, '7vq8yzxX1CjPxKsJFj2OR')
+
       .then(
         (result) => {
           console.log('✅ Email sent successfully!', result.text);
@@ -31,25 +29,25 @@ function Contact() {
           alert('Email sending failed. Check console for errors.');
         }
       );
-      // fetch('https://api.emailjs.com/api/v1.0/email/send-form', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify({
-      //     service_id: 'service_gs85x2h',
-      //     template_id: 'template_6fuggyv',
-      //     user_id: '7vq8yzxX1CjPxKsJFj2OR',
-      //     template_params: {
-      //       from_name: 'Test User',
-      //       from_email: 'test@example.com',
-      //       message: 'This is a test message.',
-      //     }
-      //   }),
-      // })
-      // .then(response => response.json())
-      // .then(data => console.log(data))
-      // .catch(error => console.error(error));
+      fetch('https://api.emailjs.com/api/v1.0/email/send-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          service_id: 'service_gs85x2h',
+          template_id: 'template_6fuggyv',
+          user_id: '7vq8yzxX1CjPxKsJFj2OR',
+          template_params: {
+            from_name: 'Test User',
+            from_email: 'test@example.com',
+            message: 'This is a test message.',
+          }
+        }),
+      })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error(error));
       
   };
   
