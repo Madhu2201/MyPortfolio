@@ -10,7 +10,7 @@ function Work() {
   return (
     <section id="work"   style={{ height: "100%" }}>
       <h2 className="worksTitle">My Portfolio</h2>
-      <div className="workDesc">  delectus quaerat quos nesciunt qui laborum et veniam! Quam aperiam illo quae nam quas.</div>
+      <div className="workDesc">UI/UX design to build dynamic and responsive web applications</div>
        <div className="worksImgs">
         <img src={workpic1} alt="" className="worksImg" />
 

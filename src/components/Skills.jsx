@@ -6,7 +6,7 @@ function Skills() {
   return (
     <section id="skills">
       <span className="skillTitle">What I do</span>
-      <div className="skillDesc">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</div>
+      <div className="skillDesc">Frontend Developer | React & UI/UX Enthusiast</div>
        <div className="skillBars">
         <div className="skillBar">
           <img src={uidesign}  alt="" className="skillImg" />
