@@ -1,7 +1,7 @@
 import './Home.css'
 import image from '../assets/pic.png'
-import bag from '../assets/bag.png'
-import { Link } from 'react-scroll'
+// import bag from '../assets/bag.png'
+// import { Link } from 'react-scroll'
 function Home() {
   return (
     <section id='home' style={{height: '100%'}}>
@@ -9,7 +9,13 @@ function Home() {
         <span className="hello">Hello,</span>
         <span className="introtext">i,m <span className='Introname'>Madhu</span><br/>React Developer</span>
          <p className="intropara">Aspiring React Developer passionate about building interactive, scalable, and user-friendly web applications. Skilled in React.js, JavaScript, Redux, and modern UI frameworks like Tailwind CSS. Strong problem-solving abilities, especially in array manipulation and state management using useReducer and Redux.</p>
-         <Link><button className="btn"><img src={bag} alt="Hire" className='bag' />Hire me</button></Link>
+         {/* <Link><button className="btn"><img src={bag} alt="Hire" className='bag' />Hire me</button></Link>
+          */}
+          <button className="btn" >
+          <a href='https://drive.google.com/file/d/1aP-jwx4jM11OfYCiMpDWQfR078ZWN6Gm/view?usp=drivesdk' >
+
+          </a>  Resume
+          </button>
       </div>
       <img src={image} alt="portfolio" className="bg" />
     </section>

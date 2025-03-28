@@ -25,22 +25,51 @@
 }
 .skillBars{
     margin: 1.5rem;
+   
+
     width: 100vw;
     max-width: 80%;
-    text-align: left;
+     /* text-align: left; */
+     text-align: center;
+     justify-content: center;
+     /* gap: 10px; */
 }
-.skillBar{
-    display: flex;
-    padding: 1.5rem 2rem;
-    margin: 1rem ;
+.skillBars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+        max-width: 900px; /* Restrict width to force wrapping */
+    
+    
+     /* Increase width so items wrap correctly */
+   
+    /* margin: 1rem auto; */
     border-radius: 0.5rem;
     background: rgb(50,50,50);
 }
-.skillImg{
-   object-fit: cover;
-   height: 3rem;
-   width: 3rem;
-    margin-right: 2rem;
+
+.skillImg {
+    object-fit: cover;
+    height: 6rem;
+    width: 6rem;
+    margin: 1rem;
+    background-color: wheat;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+/* .skillImg:hover{
+    transform: scale(1.2);
+} */
+.skillImg {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skillImg:hover {
+    transform: scale(1.2) rotate(5deg);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
 }
 .skillBarText{
     font-size: 0.75rem;
